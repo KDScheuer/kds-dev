@@ -3,100 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Kristopher Scheuer, a Site Reliability Engineer specializing in Python, AWS, and Linux automation.">  
   <title>Kris | SRE & Automation Engineer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
-    <h1>Kris Scheuer</h1>
-    <p>SRE & Automation Engineer | Linux · AWS · Go · Python</p>
-    <div class="buttons">
-      <a href="#projects">Projects</a>
-      <a href="/resume.pdf" target="_blank">Resume</a>
-      <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a>
+  <body>
+    <div class="content">
+    <header>
+      <h1>Kristopher Scheuer</h1>
+      <p>SRE & Automation Engineer | Linux · AWS · Python</p>
+      <img src="https://media.licdn.com/dms/image/v2/D5603AQEsVWMqm5sLGQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1712024668529?e=1755734400&v=beta&t=svvrILahpLpjKc10P7bWHtTyiu8nzIc_L9bv9iUzwRc" alt="Kristopher Scheuer headshot">
+      <p>Building tools and infrastructure that run clean and fail loud.</p>
+      <div class="buttons">
+        <a href="#projects">Projects</a>
+        <a href="/resume.pdf" target="_blank">Resume</a>
+        <a href="https://github.com/KDScheuer" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/kdscheuer/" target="_blank">LinkedIn</a>
+      </div>
+    </header>
+  
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Marine Corps veteran and Site Reliability Engineer based in Twin Falls, ID. 
+        I specialize in automating hybrid cloud and on-prem infrastructure, 
+        building reliable systems and custom tools with a focus on simplicity and 
+        efficiency-primarily using Python, AWS, and Linux.
+      </p>
+    </section>
+  
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Neogen Corp - Site Reliability Engineer</strong><br />
+        <p>Promoted to SRE, driving centralized observability by consolidating telemetry 
+        into LogicMonitor and building leadership-facing dashboards. Tuned alerting 
+        to eliminate false positives and improve signal quality. Continue supporting 
+        app enhancements and core infrastructure, including backups and complex 
+        incident resolution.</p>
+        </li>
+        <li><strong>Neogen Corp - Systems Administrator</strong><br />
+        <p>Independently managed hybrid infrastructure across Windows/Linux servers, AWS, 
+        and NetApp/Pure storage. Automated data pipelines using Lambda, S3, 
+        and webhooks to integrate on-prem apps with cloud services, 
+        streamlining external project delivery. Maintained LAMP stacks, 
+        automated SSL certs, and supported internal apps with C# and custom tooling.</p>
+        </li>
+        <li><strong>U.S. Marine Corps - Data Chief</strong><br />
+        <p>Led a 26-person team (sysadmins, netadmins, SATCOM) as Data Chief, 
+        enabling resilient comms for deployed sites. 
+        Built and managed a private VMware cloud, 
+        automated system health checks with Python, 
+        and hardened servers to reduce security incidents by 75%. 
+        Streamlined account provisioning, cutting task time from hours to minutes.</p>
+        </li>
+        <li><strong>U.S. Marine Corps - Systems Administrator</strong><br />
+        <p>Managed AD, SCCM, Exchange, WDS, and McAfee ePO in a classified environment. 
+        Automated patching, imaging, and account management with PowerShell, 
+        reducing vulnerabilities by 90% and inactive accounts by 30%. 
+        Strengthened endpoint and network security through LAPS, DLP, 
+        and proactive scanning.</p>
+        </li>
+      </ul>
+    </section>
+  
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project">
+      <h3>SysCheck-Lite</h3>
+      <p>CLI tool to remotely check Linux/Windows server health and status.</p>
+      <p><strong>Python, SSH, Cross-platform</strong></p>
+      <a href="https://github.com/KDScheuer/syscheck-lite" target="_blank" rel="noopener">View on GitHub</a>
     </div>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Marine Corps veteran and Site Reliability Engineer based in Twin Falls, ID. 
-      I specialize in automating hybrid cloud and on-prem infrastructure, 
-      building reliable systems and custom tools with a focus on simplicity and 
-      efficiency-primarily using Python, AWS, and Linux.
-    </p>
+    <div class="project">
+      <h3>S3 File Integrity Checker (WIP)</h3>
+      <p>Go-based tool to compare file hashes between source and destination directories. Supports local storage and S3 as valid locations.</p>
+      <p><strong>Go, AWS SDK, Hashing</strong></p>
+      <a href="https://github.com/KDScheuer/DataCheck" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>KDS-DEV.com</h3>
+      <p>Personal website, deployed with Terraform on AWS.</p>
+      <p><strong>AWS, Lambda, Python, Terraform (IaC)</strong></p>
+      <a href="https://github.com/KDScheuer/kds-dev" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
   </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>Neogen Corp – Site Reliability Engineer</strong><br />
-      <p>Promoted to SRE, driving centralized observability by consolidating telemetry 
-      into LogicMonitor and building leadership-facing dashboards. Tuned alerting 
-      to eliminate false positives and improve signal quality. Continue supporting 
-      app enhancements and core infrastructure, including backups and complex 
-      incident resolution.</p>
-      </li>
-      <li><strong>Neogen Corp – Systems Administrator</strong><br />
-      <p>Independently managed hybrid infrastructure across Windows/Linux servers, AWS, 
-      and NetApp/Pure storage. Automated data pipelines using Lambda, S3, 
-      and webhooks to integrate on-prem apps with cloud services, 
-      streamlining external project delivery. Maintained LAMP stacks, 
-      automated SSL certs, and supported internal apps with C# and custom tooling.</p>
-      </li>
-      <li><strong>U.S. Marine Corps – Data Chief</strong><br />
-      <p>Led a 26-person team (sysadmins, netadmins, SATCOM) as Data Chief, 
-      enabling resilient comms for deployed sites. 
-      Built and managed a private VMware cloud, 
-      automated system health checks with Python, 
-      and hardened servers to reduce security incidents by 75%. 
-      Streamlined account provisioning, cutting task time from hours to minutes.</p>
-      </li>
-      <li><strong>U.S. Marine Corps – Systems Administrator</strong><br />
-      <p>Managed AD, SCCM, Exchange, WDS, and McAfee ePO in a classified environment. 
-      Automated patching, imaging, and account management with PowerShell, 
-      reducing vulnerabilities by 90% and inactive accounts by 30%. 
-      Strengthened endpoint and network security through LAPS, DLP, 
-      and proactive scanning.</p>
-      </li>
-    </ul>
-  </section>
-
-<section id="projects">
-  <h2>Featured Projects</h2>
-  <div class="project">
-    <h3>SysCheck-Lite</h3>
-    <p>CLI tool to remotely check Linux/Windows server health and status.</p>
-    <p><strong>Python, SSH, Cross-platform</strong></p>
-    <a href="https://github.com/YOUR_GITHUB/syscheck-lite" target="_blank" rel="noopener">View on GitHub</a>
+  
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form onsubmit="this.innerHTML='<p>Thanks! I\'ll be in touch soon.</p>'; return false;">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  
+    <footer>
+      <p>&copy; 2025 Kris Scheuer. All rights reserved.</p>
+    </footer>
   </div>
-  <div class="project">
-    <h3>S3 File Integrity Checker (WIP)</h3>
-    <p>Go-based tool to compare file hashes between source and destination directories. Supports local storage and S3 as valid locations.</p>
-    <p><strong>Go, AWS SDK, Hashing</strong></p>
-    <p><em>GitHub coming soon</em></p>
-  </div>
-  <div class="project">
-    <h3>KDS-DEV.com</h3>
-    <p>Personal website, deployed with Terraform on AWS.</p>
-    <p><strong>AWS, Lambda, Python, Terraform (IaC)</strong></p>
-    <a href="https://github.com/YOUR_GITHUB/syscheck-lite" target="_blank" rel="noopener">View on GitHub</a>
-  </div>
-</section>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="_replyto" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    const form = e.target;
+    const status = document.getElementById('formStatus');
 
-  <footer>
-    <p>&copy; 2025 Kris Scheuer. All rights reserved.</p>
-  </footer>
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value
+    };
+
+    try {
+      const response = await fetch('https://your-api-id.execute-api.region.amazonaws.com/your-stage', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        form.innerHTML = '<p>Thanks! I’ll be in touch soon.</p>';
+      } else {
+        status.textContent = 'Something went wrong. Please try again.';
+        status.style.color = 'red';
+      }
+    } catch (error) {
+      status.textContent = 'Error sending message. Try again later.';
+      status.style.color = 'red';
+    }
+    });
+  </script>
 </body>
 </html>
+  
